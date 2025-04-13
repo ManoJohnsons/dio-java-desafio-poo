@@ -1,12 +1,14 @@
-# DIO | Desafio: Simulando Uma Conta Bancária Através Do Terminal/Console
+# DIO | Desafio: Utilizando POO para Montar um iPhone
 
-Este repositório tem a finalidade de armazenar o projeto proposto pelo desafio da DIO de representar o conceito do iPhone apresentado por Steve Jobs em 2007 usando o paradigma de programação orientada a objetos e ferramentas de diagramação para a elaboração do projeto.  
+Este repositório tem a finalidade de armazenar o projeto proposto pelo desafio da DIO, que consiste em representar o conceito do iPhone apresentado por Steve Jobs em 2007, utilizando o paradigma de programação orientada a objetos e ferramentas de diagramação para a elaboração do projeto.  
 
 ## Ferramenta Escolhida para Montar o Diagrama UML do Projeto
 
-Nesta seção se encontra o diagrama UML feito com base das instruções passadas pelo desafio e no video de apresentação do primeiro iPhone apresentada por Steve Jobs.  
+Nesta seção encontra-se o diagrama UML elaborado com base nas instruções do desafio e no vídeo de apresentação do primeiro iPhone por Steve Jobs.  
 
-Primeiro, eu modelei o diagrama no diagram.net por ja ter uma experiencia de uso da ferramenta, após a modelagem do diagrama UML feita no diagram.net, acabei descobrindo uma ferramenta de diagramação que renderiza diretamente para o Markdown chamada Mermaid, que no fim acabou sendo da minha escolha utiliza-lá para melhor praticidade, já que tudo estará em Markdown.
+Primeiro, modelei o diagrama no diagram.net (Draw.io), aproveitando minha experiência prévia com a ferramenta.  
+
+Posteriormente, descobri uma ferramenta de diagramação chamada Mermaid, que renderiza diretamente em Markdown, o que oferece maior praticidade ao manter tudo integrado ao Markdown.
 
 ## Diagrama UML do Projeto
 
