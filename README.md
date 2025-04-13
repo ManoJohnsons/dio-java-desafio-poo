@@ -10,7 +10,42 @@ Primeiro, eu modelei o diagrama no diagram.net por ja ter uma experiencia de uso
 
 ## Diagrama UML do Projeto
 
-[![Diagrama do Projeto](https://mermaid.ink/img/pako:eNqNU0Fu2zAQ_MqCQAAXtQXTtmSJMAIUySWHBkZb9FDoshHXMluJFCjKSO0a6CPyh76gL8hP-pLSkm00dhpEF5KrndnhznLDMiOJCTYYDFLtlCtIwNyar-QM_Pn5AGq-NJpS3f5PdVZgXV8rzC2Wu_PFBVzTQmmlpQGsQWlHdoEZ1eADVUcU7HHwgXxENs7Y902tMixgk2rw32x2BF5edqG34EyGtvcGVkbJQ6zCpj4L1lRQpozGPW2vbBcBH51VOj8kb48XgE8esfD3erF-oXJfSjclWXPK1WWgIy3pVI7vRqbQXhlrSZnPZt17RsEtrihHaezNrrAm96IUuld3ys4xVxp7jS3-I0eqrg23ZoXv7rB3qrbBQq3xwPNE1VMjoRVJz3l4sx-Ic-8tFfj46_G3957AWyd9kUJJlASknSUwNWSmrDzc37AG_S_5-WikjKcMZj-CYL_tKoMAVVYFlZ4EU3108nXp521_DY71WW6VZMLZhvrMD0SJuyNrPUuZW_q8lAm_lWi_pcw31WMq1F-MKQ8wa5p8ycQCi9qfmkr68dk_pWPUtgN1ZRrtmBiPk7hlYWLD7pkYDAPOp1E4TpIhj-MJDydJn31ngkfjIBpNR2GcxGHER-F022frtjQPhtE45HzIPdkkioejPiOpdn3uHn77_rd_AYRgV5s?type=png)](https://mermaid.live/edit#pako:eNqNU0Fu2zAQ_MqCQAAXtQXTtmSJMAIUySWHBkZb9FDoshHXMluJFCjKSO0a6CPyh76gL8hP-pLSkm00dhpEF5KrndnhznLDMiOJCTYYDFLtlCtIwNyar-QM_Pn5AGq-NJpS3f5PdVZgXV8rzC2Wu_PFBVzTQmmlpQGsQWlHdoEZ1eADVUcU7HHwgXxENs7Y902tMixgk2rw32x2BF5edqG34EyGtvcGVkbJQ6zCpj4L1lRQpozGPW2vbBcBH51VOj8kb48XgE8esfD3erF-oXJfSjclWXPK1WWgIy3pVI7vRqbQXhlrSZnPZt17RsEtrihHaezNrrAm96IUuld3ys4xVxp7jS3-I0eqrg23ZoXv7rB3qrbBQq3xwPNE1VMjoRVJz3l4sx-Ic-8tFfj46_G3957AWyd9kUJJlASknSUwNWSmrDzc37AG_S_5-WikjKcMZj-CYL_tKoMAVVYFlZ4EU3108nXp521_DY71WW6VZMLZhvrMD0SJuyNrPUuZW_q8lAm_lWi_pcw31WMq1F-MKQ8wa5p8ycQCi9qfmkr68dk_pWPUtgN1ZRrtmBiPk7hlYWLD7pkYDAPOp1E4TpIhj-MJDydJn31ngkfjIBpNR2GcxGHER-F022frtjQPhtE45HzIPdkkioejPiOpdn3uHn77_rd_AYRgV5s)
+```mermaid
+---
+title: Projeto — iPhone
+---
+classDiagram
+
+%% Definindo as interfaces do projeto.
+class ReprodutorMusical {
+    <<interface>>
+    + tocar() void
+    + pausar() void
+    + selecionarMusica(musica: String) void
+}
+
+class Telefone {
+    <<interface>>
+    + ligar(numero: String) void
+    + atender() void
+    + iniciarCorreioVoz() void
+}
+
+class NavegadorInternet {
+    <<interface>>
+    + exibirPagina(url: String) void
+    + adicionarNovaAba() void
+    + atualizarPagina() void
+}
+
+%% Definindo a classe do projeto.
+class IPhone
+
+%% Definindo as relações e cardinalidade entre os componentes no projeto.
+ReprodutorMusical "1" <|.. "1" IPhone : implementa
+Telefone "1" <|.. "1" IPhone : implementa
+NavegadorInternet "1" <|.. "1" IPhone : implementa
+```
 
 ## Fontes
 
