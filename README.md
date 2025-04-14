@@ -31,6 +31,8 @@ class Telefone {
     + ligar(numero: String) void
     + atender() void
     + iniciarCorreioVoz() void
+    + fazerConferencia(numeros: String[]) void
+    + colocarLigacaoEmEspera() void
 }
 
 class NavegadorInternet {
@@ -38,6 +40,7 @@ class NavegadorInternet {
     + exibirPagina(url: String) void
     + adicionarNovaAba() void
     + atualizarPagina() void
+    + trocarDeAba(url1: String, url2: String) void
 }
 
 %% Definindo a classe do projeto.
